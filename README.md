@@ -2,44 +2,36 @@
 Problem Statement: Large Language Models (LLMs) are powerful tools for Natural Language Processing (NLP) tasks but often come with high computational costs. The task is to design and develop a script capable of optimizing and running an LLM based on the GPT2LMHeadModel architecture.
 
 
+# Running LLM Inference Optimization Script on Google Colab
 
+This script is designed to optimize and run a Large Language Model (LLM) using MistralForCausalLM architecture on Google Colab. It accepts a Hugging Face model path as input, optimizes the model for faster inference, waits for user input for a prompt, runs the model on the prompt, and outputs the model response along with performance metrics.
 
-# LLM Inference Optimization
+## How to Use on Google Colab
 
-## Overview
-This script is designed to optimize and run a Large Language Model (LLM) based on the MistralForCausalLM architecture. It accepts a Hugging Face model path as input, optimizes the model for faster inference, waits for user input for a prompt, runs the model on the prompt, and outputs the model response along with the inference time.
+1. Open Google Colab: Visit [Google Colab](https://colab.research.google.com/) and sign in with your Google account.
 
-## Requirements
-- Python 3.x
-- PyTorch
-- Transformers library from Hugging Face
+2. **Create a New Notebook**: Click on "File" -> "New Notebook" to create a new Colab notebook.
 
-## Usage
-1. Clone the repository to your local machine:
    
-   git clone https://github.com/Mahesh8123/llm-inference-optimization.git
+3.Upload Script: Upload the provided Python script (`llm_inference_optimization.py`) to your Google Drive.
+
+4. Install Required Libraries: Install the Transformers library from Hugging Face by running the following code cell:
+   
+   !pip install transformers
+   
+
+5. **Run the Script**: Execute the script by running the following code cell:
   
+   !python /content/drive/MyDrive/llm_inference_optimization.py
+ 
 
-2. Navigate to the directory containing the script:
+6. Follow Instructions: Follow the prompts to enter the Hugging Face model path and the desired prompt.
 
-   cd LLM-Inference-Optimization
-   
-
-3. Install the required dependencies:
-
-   pip install torch transformers
-
-
-4. Run the script:
-
-   python inference_optimization.py
-   
-
-5. Follow the on-screen prompts to enter the Hugging Face model path and the desired prompt.
-
-6. The script will then run the model on the prompt, display the model response, and provide the inference time.
+8. View Output: The script will run the model on the prompt, display the model response, and provide performance metrics including inference time.
 
 ## Additional Notes
-- Ensure that you have access to a GPU with specifications compatible with the script requirements.
-- Depending on the model size and GPU capabilities, the optimization process and inference time may vary.
+
+- Ensure that you have a stable internet connection and sufficient runtime on Google Colab to execute the script.
+- Depending on the model size and Colab's GPU capabilities, the optimization process and inference time may vary.
 - Feel free to modify the script as needed for your specific use case or to experiment with different optimization techniques.
+
