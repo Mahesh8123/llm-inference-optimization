@@ -17,7 +17,7 @@ This script is designed to optimize and run a Large Language Model (LLM) based o
 ## Usage
 1. Clone the repository to your local machine:
    
-   git clone <repository_url>
+   git clone https://github.com/Mahesh8123/llm-inference-optimization.git
   
 
 2. Navigate to the directory containing the script:
@@ -31,9 +31,9 @@ This script is designed to optimize and run a Large Language Model (LLM) based o
 
 
 4. Run the script:
-   ```bash
+
    python inference_optimization.py
-   ```
+   
 
 5. Follow the on-screen prompts to enter the Hugging Face model path and the desired prompt.
 
